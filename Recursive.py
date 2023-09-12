@@ -24,7 +24,7 @@ print('Fibonacci sequence:')
 for i in range(number):
     print(fibonacci(i))
 
-# 3. 
+# 3. Sum of Given Number :
 def sumnums(n):
     if n == 1:
         return 1
@@ -33,7 +33,7 @@ def sumnums(n):
 x = int(input("Enter Number : "))
 print("sum of ",x," : ",sumnums(x))
 
-# 4. 
+# 4. Reverse String : 
 def reverse(string):
     if len(string) == 0:
         return string
