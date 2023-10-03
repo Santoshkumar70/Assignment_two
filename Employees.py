@@ -1,8 +1,5 @@
 #2. Write a program to enter employee details and also filter the stored employee  details  with name and empid and designation and email. 
 
-# write a python program that allows you to add an employee with domain, name, empid, and email details using user input and then print the employee's details.
-
-
 employees = {}
 
 def add_employee():
