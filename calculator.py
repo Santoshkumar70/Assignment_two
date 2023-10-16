@@ -1,40 +1,44 @@
-def add(x,y):
-    return x+y
+class calculator():
 
-def substration(x,y):
-    return x-y
+   def __init__(self,input_01,input_02):
+      self.a=input_01
+      self.b=input_02
 
-def multiplecation(x,y):
-    return x*y
+   def add(self):
+      return self.a+self.b
+   def multiply(self):
+      return self.a*self.b
+   def divide(self):
+      return self.a/self.b
+   def subtract(self):
+      return self.a-self.b
+   
+input_1 = int(input("Enter the first number: "))
+input_2 = int(input("Enter the second number: "))
+print("The entered first and second numbers are : ")
+print(input_1, input_2)
 
-def division(x,y):
-    return x/y
+my_instance = calculator(input_1,input_2)
+choice=1
 
-print("select operation: ")
-print("1.Add")
-print("2.Substration")
-print("3.Multiplecation")
-print("4.Division")
+while choice!=0:
+   print("0. Exit")
+   print("1. Addition")
+   print("2. Subtraction")
+   print("3. Multiplication")
+   print("4. Division")
+   choice=int(input("Enter your choice... "))
 
-while True:
-    choose = input("Select Operation(1/2/3/4): ")
-    if choose in ('1','2','3','4'):
-        try:
-            num1 = float(input("Enter X value : "))
-            num2 = float(input("Enter Y value : "))
-        
-        except ValueError:
-            continue
-
-        if choose =='1':
-            print(num1, " + ", num2, " = ", add(num1,num2))
-        elif choose == '2':
-            print(num1, " - ", num2, " = ", substration(num1,num2))
-        elif choose == '3':
-            print(num1, " * ",num2, " = ", multiplecation(num1,num2))
-        elif choose == '4':
-            print(num1, " / ", num2, " = ", division(num1,num2))
-
-        
-    else:
-        print("Invalid Input ")
+   if choice==1:
+      print("The computed addition result is : ",my_instance.add())
+   elif choice==2:
+      print("The computed subtraction result is : ",my_instance.subtract())
+   elif choice==3:
+      print("The computed product result is : ",my_instance.multiply())
+   elif choice==4:
+      print("The computed division result is : ",round(my_instance.divide(),2))
+   elif choice==0:
+      print("Exit")
+   else:
+      print("Sorry, invalid choice!")
+print()
