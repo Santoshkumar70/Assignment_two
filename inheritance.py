@@ -1,5 +1,5 @@
 # Single Inheritance:
-"""
+
 class company:
     def companyname(self):
         print("Marolix")
@@ -30,7 +30,7 @@ class Employee(company1,company2):
 
 e = Employee()
 e.method2()
-"""
+
 # Multileve Inheritance:
 class grandfather:
     def land(self):
@@ -47,7 +47,7 @@ class son(father):
         print("ferari car")
 s = son()
 s.car()
-"""
+
 # Hirechal Inheritance :
 class company:
     def companyname(self):
@@ -68,4 +68,4 @@ e1.companyname()
 e1.emp1()
 e2=Employee2()
 e2.emp2()
-"""
+
