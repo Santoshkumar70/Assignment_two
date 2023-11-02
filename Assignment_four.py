@@ -50,25 +50,25 @@ list2 = eval(input("Enter the list two : "))
 for x in list1:
     if x in list2:
         print("letter",x,"is commen letter in both lists")
-'''
-# 9.Write a Python program to remove a specified column from a given nested list.
-# list_one = eval(input("Enter the list one : "))
-# main_list = []
-# for i in range(0,len(list_one)):
-#     result=[]
-#     for j in range(1,len(list_one)):
-#         result.append(list_one[i][j])
-#     main_list.append(result)
-# print(main_list)
 
-# 10. Write a Python program to convert a list of multiple integers into a single integer.
-# list_two = eval(input("Enter the list one : "))
-# s = ""
-# for i in list_two:
-#     s = s+str(i)
-# print(int(s))
+9.Write a Python program to remove a specified column from a given nested list.
+list_one = eval(input("Enter the list one : "))
+main_list = []
+for i in range(0,len(list_one)):
+    result=[]
+    for j in range(1,len(list_one)):
+        result.append(list_one[i][j])
+    main_list.append(result)
+print(main_list)
 
-# 10.Write a Python program to remove duplicates from a list.
+10. Write a Python program to convert a list of multiple integers into a single integer.
+list_two = eval(input("Enter the list one : "))
+s = ""
+for i in list_two:
+    s = s+str(i)
+print(int(s))
+
+10.Write a Python program to remove duplicates from a list.
 list_l = eval(input("Enter the list one : "))
 res = []
 for i in list_l:
