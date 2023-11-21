@@ -129,5 +129,38 @@ else:
         count = count + 1
 
 
+# palindrome string:
+a = "malayalam"
+b = ""
+for i in a:
+    b = i + b
+
+if (a == b):
+    print("YES")
+else:
+    print("NO")
+        
+
+def abc(x):
+    return x ==x[::-1]
+
+x = "mom"
+y = abc(x)
+if y:
+    print("YES")
+else:
+    print("NO")
+
+a = "mom"
+if a == a[::-1]:
+    print("YES")
+else:
+    print("NO")
+
+
+# palindrome number:
+num = 8897988
+res = str(num) == str(num)[::-1]
+print(res)
         
 
